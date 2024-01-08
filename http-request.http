@@ -1,0 +1,19 @@
+###
+GET http://localhost:8080/person/all
+
+###
+PUT http://127.0.0.1:8080/person/retiredToDefault
+
+
+###
+PUT http://localhost:8080/person/correctRetired
+
+
+###
+PUT http://localhost/person/correctByLastName/ivanov
+
+###
+PUT http://localhost:8080/person/correctByLastName/ivanov+68
+
+
+###
