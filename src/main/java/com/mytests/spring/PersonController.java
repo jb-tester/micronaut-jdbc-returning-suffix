@@ -48,7 +48,7 @@ public class PersonController {
     @Put("/correctRetired")
     public List<String> correctRetiredByAge(){
         List<String> rez = new ArrayList<>();
-        personRepository.updateRetiredByAgeGreaterThan(65,true);
+        rez.add(personRepository.updateRetiredByAgeGreaterThan(65,true)+" records updated:");
         for (Person person : personRepository.findAll()) {
             rez.add(person.toString());
         }
